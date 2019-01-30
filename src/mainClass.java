@@ -39,6 +39,10 @@ public class mainClass {
 		} while (choice != 0);
 		Employee cal = new Employee();
 
+		for (int i = 0; i <= 10000; i++) {
+			Company.add(Employee.rand());
+		}
+
 		Company.add(cal);
 		System.out.println(Company.toString());
 	}

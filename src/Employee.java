@@ -2,7 +2,7 @@
 import java.util.*;
 
 public class Employee {
-	
+
 	private String name;
 	private int employeeNumber;
 	private int salary;
@@ -11,7 +11,7 @@ public class Employee {
 
 	public Employee() {
 		Random rand = new Random();
-		
+
 		this.name = "Steve";
 		this.employeeNumber = rand.nextInt();
 		this.salary = 50000;
@@ -24,8 +24,8 @@ public class Employee {
 
 		String retString = new String();
 		retString = this.name;
-		retString += ", "+this.employeeNumber;
-		
+		retString += ", " + this.employeeNumber;
+
 		return retString;
 	}
 
