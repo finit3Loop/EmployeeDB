@@ -25,8 +25,24 @@ public class Employee {
 		String retString = new String();
 		retString = this.name;
 		retString += ", " + this.employeeNumber;
-
+		System.out.println();
 		return retString;
+
+	}
+
+	public static Employee rand() {
+		Random rand = new Random();
+
+		Employee randEmp = new Employee();
+
+		randEmp.name = "randEmp";
+		randEmp.employeeNumber = rand.nextInt();
+		randEmp.salary = rand.nextInt();
+		randEmp.daysOff = rand.nextInt();
+		randEmp.beginingTime = rand.nextInt();
+		randEmp.endTime = rand.nextInt();
+
+		return randEmp;
 	}
 
 }

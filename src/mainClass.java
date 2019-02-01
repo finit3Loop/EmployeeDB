@@ -23,6 +23,7 @@ public class mainClass {
 				System.out.println("Not a number");
 				choice = 2;
 			}
+
 			switch (choice) {
 			// add Employee
 			case 1:
@@ -35,16 +36,20 @@ public class mainClass {
 				break;
 			}
 
-			// scan.close();
+			scan.close();
 		} while (choice != 0);
+
 		Employee cal = new Employee();
 
 		for (int i = 0; i <= 10000; i++) {
 			Company.add(Employee.rand());
 		}
-
+		for (int i = 0; i < Company.size(); i++) {
+			System.out.println(Company.get(i));
+		}
 		Company.add(cal);
-		System.out.println(Company.toString());
+		// System.out.println(Company.toString());
+
 	}
 
 }
