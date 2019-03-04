@@ -49,9 +49,24 @@ public class Employee {
 		
 		return(this.name);
 	}
-	public int getNumber()
+	public int getSalary()
 	{
 		
-		return(this.employeeNumber);
+		return(this.salary);
+	}
+	public int getDaysOff()
+	{
+		
+		return(this.daysOff);
+	}
+	public int getBeginingTime()
+	{
+		
+		return(this.beginingTime);
+	}
+	public int getEndTime()
+	{
+		
+		return(this.endTime);
 	}
 }
